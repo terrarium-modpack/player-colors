@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "player_colors",
+  "version": "${version}",
+  "name": "Player Colors",
+  "description": "Allows players to set the color of their name in tab and chat.",
+  "authors": [
+    "OptimisticDev"
+  ],
+  "contact": {
+    "sources": "https://github.com/terrarium-modpack/player-colors",
+    "issues": "https://github.com/terrarium-modpack/player-colors/issues"
+  },
+  "license": "MIT",
+  "environment": "server",
+  "entrypoints": {
+    "server": [
+      "dev.optimistic.playercolors.ServerEntrypoint"
+    ]
+  },
+  "mixins": [
+    "player_colors.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.15.11",
+    "minecraft": "~1.20.1",
+    "java": ">=17",
+    "fabric-api": "*"
+  }
+}
