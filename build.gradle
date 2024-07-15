@@ -18,8 +18,6 @@ dependencies {
   modImplementation fabricApi.module("fabric-command-api-v2", project.fabric_version)
 
   modRuntimeOnly "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
-
-  include(implementation(annotationProcessor("io.github.llamalad7:mixinextras-fabric:0.4.0-beta.2")))
 }
 
 processResources {
